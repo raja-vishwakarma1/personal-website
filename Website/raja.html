@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG_20230720_172001-removebg-preview.png">
+    <title>Responsive Project Container</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        /* Existing Styles */
+        .sec3 {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            width: 100%;
+            background: radial-gradient(#333, #000);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 2rem;
+        }
+    
+        .sec3 h1 {
+            color: #fff;
+            font-size: 4rem;
+            border-bottom: 0.2rem solid rgb(235, 102, 102);
+            margin-bottom: 2rem;
+        }
+    
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+    
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #444;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    
+        .project h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+    
+        .project a {
+            color: rgb(235, 102, 102);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    
+        .project a:hover {
+            text-decoration: underline;
+        }
+    
+        /* New Styles for Home */
+        .sec3 a[href="index.html"] {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+    
+        .sec3 a[href="#section1"]:hover {
+            color: rgb(235, 102, 102);
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+
+    <section class="sec3" id="section3">
+        <a href="index.html" >Home</a>
+        <h1>PROJECTS</h1>
+        <div class="project-container" id="projectContainer">
+            <div class="project">
+                <h2>AI Voice Assistant</h2>
+                <a href="https://raja91ai.netlify.app/" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h2>Quiz Game</h2>
+                <a href="https://rajaquiz91.netlify.app/" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h2>Photo Border Maker</h2>
+                <a href="https://faplai.netlify.app/" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h2>143 Challenge</h2>
+                <a href="https://143challange.netlify.app/" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h2>Instagram Hack</h2>
+                <a href="https://insta0001.netlify.app/" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h2>Calculator</h2>
+                <a href="https://calculater911.netlify.app/" target="_blank">Link</a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
