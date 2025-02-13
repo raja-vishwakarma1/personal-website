@@ -9,7 +9,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 49.5%;
     scroll-behavior: smooth;
 }
 .fa{
@@ -811,7 +811,7 @@ html {
 }
 
 /* media query start here  */
-@media(max-width:360px) {
+@media(max-width:360px){
     .sec1__menuIcon {
         display: inline-block;
     }

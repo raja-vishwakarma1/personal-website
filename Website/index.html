@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="icon" href="IMG_20230720_172001-removebg-preview.png">
+    <link rel="icon" href="raja.jpg">
 </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -16,10 +16,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sildebar.css" />
+    
     <title>Know Me Better</title>
 </head>
 
 <body>
+<!-- 
+slide bar yaha se add hai  -->
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <div class="content">
+                <h2>Slide 1 Title</h2>
+                <button class="watch-now-btn" onclick="playVideo()">Watch Now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide 2 Title</h2>
+                <button class="watch-now-btn" onclick="playVideo()">Watch Now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide 3 Title</h2>
+                <button class="watch-now-btn" onclick="playVideo()">Watch Now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide 4 Title</h2>
+                <button class="watch-now-btn" onclick="playVideo()">Watch Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -445,6 +490,35 @@
                 behavior: 'smooth'
             })
         }
+//yaha slide bar ka code ma ko 10 second pe slide hota hai
+
+
+        const slides = document.querySelector('.slides');
+        const slideCount = document.querySelectorAll('.slide').length;
+        let currentIndex = 0;
+
+        function slideNext() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(slideNext, 10000); // 10 seconds
+
+        function playVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.style.display = 'flex';
+        }
+
+        function closeVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.style.display = 'none';
+        }
+   
+
+
+
+
+
     </script>
 </body>
 
